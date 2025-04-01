@@ -6,8 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Witam na Stronie!</h1>
-    <p>Opis Strinki</p>
-    <footer>Dziekuje za przeczytanie</footer>
+    <p>
+        ssh-keygen -t rsa -b 4096 -C "kevinlech2007@gmail.com"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+        cd  C/Users/Uczeń/.ssh
+        cd  /C/Users/Uczeń/Desktop/git
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+        eval $(ssh-agent -s)
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+        cat ~/.ssh/id_rsa.pub
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ssh -T git@github.com
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+        git config --global user.name "kevcio1"
+        git config --global user.email "kevinlech2007@gmail.com"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+        git clone git@github.com:kevcio1/Lekcja_TEST.git
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+        cd lekcja_test
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+        git add index.html
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+        git commit -m "zmiana"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        git push
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        git checkout -b develop
+        git checkout main
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        git push --set-upstream origin develop
+    </p>
 </body>
 </html>
